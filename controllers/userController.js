@@ -87,7 +87,7 @@ const loginUser = async(userObj)=>{
             if (await (bcrypt.compare(password, isEmailExist.password))) {
                 const token = jwt.sign(
                     { user_id: isEmailExist._id, email },
-                    process.env.TOKEN_KEY,
+                    "abc",
                     {
                         expiresIn: "1h",
                     }

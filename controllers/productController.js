@@ -13,7 +13,7 @@ const verifyToken = async (tokenObj) => {
     }
     else {
         try {
-            const result = await jwt.verify(token, process.env.TOKEN_KEY);
+            const result = await jwt.verify(token, "abc");
             return ({
                 success: true,
                 message: 'User authorization success'
