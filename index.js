@@ -13,6 +13,8 @@ const port = process.env.PORT || 8000;
 connectDB();
 
 app.get('/', (req, res) => res.send('Backend working'));
+app.get('/post', (req, res) => res.send('post working'));
+
 
 app.post('/user/register', async (req, res) => {
     const { registerUser } = userController;
