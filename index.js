@@ -75,7 +75,7 @@ app.post('/product/add', async (req, res) => {
     }
 })
 
-app.get('/view', async (req, res) => {
+app.get('/product/view', async (req, res) => {
     const { sort, product_category } = req.query;
     const { getProducts } = productController;
 
